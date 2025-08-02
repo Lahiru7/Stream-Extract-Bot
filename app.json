@@ -1,51 +1,26 @@
-{
-    "name": "Streams Extractor Bot",
-    "description": "A bot to extract audio and subtitles from video files..",
-    "logo": "https://telegra.ph/file/71aaa621508cd696ab538.jpg",
-    "keywords": [
-        "Streams",
-        "Extractor",
-        "Telegram Bot",
-        "TroJanzHEX"
-    ],
-    "website": "https://TroJanzHEX.me",
-    "repository": "https://github.com/TroJanzHEX/Streams-Extractor",
-    "success_url": "https://telegram.dog/TroJanzHEX",
-    "env": {
-        "BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org or @UseTGXBot",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "Your APP ID from my.telegram.org or @UseTGXBot",
-            "value": ""
-        },
-        "AUTH_USERS": {
-            "description": "Id of users that can use the bot, from @MissRose_bot by /id command",
-            "value": ""
-        }
-        "LOG_CHANNEL": {
-            "description": "Id of Log channel to send extracted medias.",
-            "value": ""
-        }
-    },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+"env": {
+  "BOT_TOKEN": {
+    "description": "You Telegram Bot Token from @BotFather",
+    "value": "7871201406:AAFy2UWKboVjhjo2eLGMSxN31aVY7F_cUv0"
+  },
+  "API_HASH": {
+    "description": "Your API Hash from my.telegram.org",
+    "value": "0a3d884a11fa085cd872250a2140e344"
+  },
+  "APP_ID": {
+    "description": "Your APP ID from my.telegram.org",
+    "value": "28902210"
+  },
+  "OWNER_ID": {
+    "description": "Your Telegram ID",
+    "value": "1178035103"
+  },
+  "AUTH_USERS": {
+    "description": "Comma-separated user IDs allowed to use the bot",
+    "value": "7294451741,1178035103"
+  },
+  "LOG_CHANNEL": {
+    "description": "Channel ID to post logs and extracted files",
+    "value": "-1002875757516"
+  }
 }
